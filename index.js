@@ -7,7 +7,7 @@ console.log('Welcome ' + userName + ' to DO YOU KNOW HARSHITHA!' );
 
 function play(question, answer) {
   var userAnswer = readLineSync.question(question);
-  if(userAnswer === answer) {
+  if(userAnswer.toUpperCase() === answer) {
     console.log('Right Answer!')
     score += 1;
   } else {
